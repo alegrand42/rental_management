@@ -10,7 +10,7 @@ class Api::V1::ReservationsController < Api::V1::ApiController
 
   private
 
-    def house_params
+    def reservation_params
       params.require(:reservation).permit(:start_date, :end_date)
     end
 end

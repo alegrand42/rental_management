@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20190805045735) do
   create_table "missions", force: :cascade do |t|
     t.integer "listing_id"
     t.string "mission_type"
-    t.date "date"
+    t.datetime "date"
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
